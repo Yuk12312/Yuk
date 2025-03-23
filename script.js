@@ -11,7 +11,7 @@ const cardData = [
         rarity: 'N',
         effect: '小毓毓會瘋狂讚您',
         execution: '連續講出10個不重複的優點',
-        image: 'cards/card1.png'
+        image: 'card1.png'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const cardData = [
         rarity: 'R',
         effect: '召喚小毓毓幫你送外賣',
         execution: '寫下想吃的食物（或從推薦餐廳選擇）',
-        image: 'cards/card2.png'
+        image: 'card2.png'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const cardData = [
         rarity: 'SR',
         effect: '兌換指定部位按摩',
         execution: '15分鐘專業按摩服務（需預約）',
-        image: 'cards/card3.png'
+        image: 'card3.png'
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const cardData = [
         rarity: 'SSR',
         effect: '立即終止冷戰',
         execution: '書面檢討並提出改善方案',
-        image: 'cards/card4.png'
+        image: 'card4.png'
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ const cardData = [
         rarity: 'UR',
         effect: '兌換神秘盲盒禮物',
         execution: '準備心跳加速的驚喜',
-        image: 'cards/card5.png'
+        image: 'card5.png'
     }
 ];
 
