@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>小毓毓專屬好感遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 主頁 -->
+    <div id="home" class="page">
+        <h1>❤️ 小毓毓專屬遊戲 ❤️</h1>
+        <div class="points-display">甜蜜點數：<span id="points">0</span></div>
+        <button onclick="showPage('game')">開始遊戲</button>
+        <button onclick="showPage('draw')">愛的抽卡</button>
+        <button onclick="showPage('inventory')">專屬卡庫</button>
+        <button onclick="showPage('craft')">卡片合成</button>
+    </div>
+
+    <!-- 遊戲頁 -->
+    <div id="game" class="page">
+        <h2>💞 默契大考驗</h2>
+        <button onclick="startGame()">開始挑戰</button>
+        <button onclick="showPage('home')">返回</button>
+    </div>
+
+    <!-- 抽卡頁 -->
+    <div id="draw" class="page">
+        <h2>✨ 幸運抽卡</h2>
+        <button onclick="drawCard()">抽卡（消耗10點）</button>
+        <div id="card-result"></div>
+        <button onclick="showPage('home')">返回</button>
+    </div>
+
+    <!-- 卡庫頁 -->
+    <div id="inventory" class="page">
+        <h2>📦 小毓毓專屬卡庫</h2>
+        <div id="card-list"></div>
+        <button onclick="showPage('home')">返回</button>
+    </div>
+
+    <!-- 合成頁 -->
+    <div id="craft" class="page">
+        <h2>🔨 卡片工坊</h2>
+        <div class="recipe">
+            <h3>3張普通卡 → 1張稀有卡</h3>
+            <button onclick="craftCard('R')">合成</button>
+        </div>
+        <div class="recipe">
+            <h3>2張稀有卡 → 1張超稀有卡</h3>
+            <button onclick="craftCard('SR')">合成</button>
+        </div>
+        <button onclick="showPage('home')">返回</button>
+    </div>
+
+    <div class="save-notice">自動保存成功！</div>
+    <script src="script.js"></script>
+</body>
+</html>
